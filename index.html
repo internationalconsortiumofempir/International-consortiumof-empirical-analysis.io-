@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Open Graph Image Preview for Google Search -->
-<meta property="og:image" content="https://internationalconsortiumofempir.github.io/1786851499736.png">
-<meta property="og:image:secure_url" content="https://internationalconsortiumofempir.github.io/1786851499736.png">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="ICEA Research Firm Logo">
-    <meta name="google-site-verification" content="duqj_4c9YRk40L_ewjLGLBRhfqrpCyz5DYjP29-_Kpo" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>International Consortium of Empirical Analysis - Research Farm</title>
@@ -107,6 +99,8 @@
             text-decoration: none;
             font-weight: bold;
             transition: background 0.3s;
+            border: none;
+            cursor: pointer;
         }
 
         .btn:hover {
@@ -196,10 +190,42 @@
             text-align: center;
         }
 
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #0f2537;
+        }
+
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
         .contact-details {
             font-size: 1.1rem;
             color: #333;
-            margin-top: 1rem;
+            margin-top: 2rem;
         }
 
         .contact-details p {
@@ -269,25 +295,80 @@
             </div>
         </section>
 
+        <section id="sectors" class="sectors" style="background: #eef2f5; border-radius: 8px; max-width: 1200px; margin: 0 auto;">
+            <h2>Multi-Sector Focus Areas</h2>
+            <p class="section-desc">Tailored empirical research and project implementation frameworks engineered for diverse operational landscapes.</p>
+            <div class="grid">
+                <div class="card">
+                    <h3>Commercial Sector</h3>
+                    <p>Consumer behavior studies, market feasibility assessments, and data analytics to optimize commercial strategies and business growth.</p>
+                </div>
+                <div class="card">
+                    <h3>Private Sector</h3>
+                    <p>Private enterprise evaluations, supply chain empirical audits, and competitive landscape intelligence modeling.</p>
+                </div>
+                <div class="card">
+                    <h3>Government Sector</h3>
+                    <p>Public policy impact evaluations, socio-economic demographic mapping, and public service efficacy analysis.</p>
+                </div>
+                <div class="card">
+                    <h3>NGO Sector</h3>
+                    <p>Rights-based field evaluations, beneficiary impact surveys, and inclusive community metric tracking for non-governmental initiatives.</p>
+                </div>
+            </div>
+        </section>
+        
         <section id="about" class="about">
             <h2>About International Consortium of Empirical Analysis</h2>
             <p>We are an independent, non-governmental institution dedicated to uncovering practical solutions to complex research problems. Grounded in rigorous research methodologies—including surveys, questionnaires, and strategic project implementation—we transform empirical data into actionable outcomes.</p>
-            <p><strong>Leadership & Background:</strong> Founded by a distinguished research expert with extensive experience across the sector, including notable collaborations with prominent organizations. To ensure the highest standards of transparency, reliability, and justice in all institutional operations, the founder partnered with a leading human rights expert. This partnership guarantees that our research remains inclusive, ensuring no segment of the target population is left out. Under a formal partnership agreement, this expert serves as co-founder, jointly guiding the professional execution of our vision and mandate.</p>
+            <p><strong>Leadership & Background:</strong> Founded by a distinguished research expert with extensive experience across the sector, including notable collaborations with prominent organizations such as BRAC and WAN JEM. To ensure the highest standards of transparency, reliability, and justice in all institutional operations, the founder partnered with a leading human rights expert. This partnership guarantees that our research remains inclusive, ensuring no segment of the target population is left out. Under a formal partnership agreement, this expert serves as co-founder, jointly guiding the professional execution of our vision and mandate.</p>
             <p><strong>Vision & Mandate:</strong> The vision and mandate of the International Consortium of Empirical Analysis are deeply rooted in global trust, reliability, and transparency.</p>
         </section>
 
-        <section id="data-sales" class="data-sales">
-            <h2>Research Data & Information Sales</h2>
-            <p>We provide exclusive access to curated research datasets, analytical reports, and institutional insights for organizations seeking high-value empirical data.</p>
-            <a href="#contact" class="btn secondary-btn">Inquire About Data Access</a>
+        <section class="data-sales">
+            <div id="data-sales">
+                <h2>Research Data & Information Sales</h2>
+                <p class="section-desc">We provide exclusive access to curated research datasets, analytical reports, and institutional insights for organizations seeking high-value empirical data.</p>
+                <p class="section-desc">We provide secure, exclusive access to curated multi-sector research datasets, analytical tracking reports, and institutional market insights.</p>
+                <a href="#contact" class="btn secondary-btn">Inquire About Data Access</a>
+            </div>
         </section>
 
-        <section id="contact" class="contact">
-            <h2>Contact Us</h2>
-            <p class="section-desc">Get in touch with us for research contracts, project implementation, and data sales inquiries.</p>
-            <div class="contact-details">
-                <p><strong>Phone:</strong> <a href="tel:+23299877076">+23299877076</a></p>
-                <p><strong>Email:</strong> <a href="mailto:internationalconsortiumofempir@gmail.com">internationalconsortiumofempir@gmail.com</a></p>
+        <section id="contact">
+            <div class="contact-container">
+                <h2>Contact Our Research Team</h2>
+                <p style="color: #666; font-size: 0.95rem; margin-bottom: 2rem;">Connect with us for cross-sector research contracts, project implementation partnerships, and data catalog inquiries.</p>
+                
+                <form id="iceaContactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Dr. Jane Smith" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Professional Email</label>
+                        <input type="email" id="email" placeholder="jane@organization.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sector">Target Sector Focus</label>
+                        <select id="sector">
+                            <option value="Commercial Sector Project">Commercial Sector Project</option>
+                            <option value="Private Sector Initiative">Private Sector Initiative</option>
+                            <option value="Government / Public Policy">Government / Public Policy</option>
+                            <option value="NGO / Human Rights Evaluation">NGO / Human Rights Evaluation</option>
+                            <option value="Data Sales Inquiry">Data Sales Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Scope / Message</label>
+                        <textarea id="message" placeholder="Describe your research requirements or project implementation goals..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%; text-align: center;">Submit Inquiry</button>
+                </form>
+
+                <div class="contact-details">
+                    <p><strong>Phone:</strong> <a href="tel:099877076">099877076</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:internationalconsortiumofempir@gmail.com">internationalconsortiumofempir@gmail.com</a></p>
+                </div>
             </div>
         </section>
     </main>
@@ -303,18 +384,46 @@
             links.forEach(link => {
                 link.addEventListener('click', (e) => {
                     e.preventDefault();
-                    const targetId = link.getAttribute('href').substring(1);
-                    const targetSection = document.getElementById(targetId);
+                    const targetId = link.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
                     
                     if (targetSection) {
                         targetSection.scrollIntoView({
                             behavior: 'smooth'
                         });
                     }
+
+                    links.forEach(l => l.classList.remove('active'));
+                    link.classList.add('active');
                 });
             });
 
-            console.log("ICEA Research Farm portal initialized successfully.");
+            // Form Mailto Integration Logic
+            const contactForm = document.getElementById('iceaContactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const sector = document.getElementById('sector').value;
+                    const message = document.getElementById('message').value;
+
+                    const recipientEmail = "internationalconsortiumofempir@gmail.com";
+                    const subject = encodeURIComponent(`ICEA Inquiry: ${sector} - from ${name}`);
+                    const body = encodeURIComponent(
+                        `Name: ${name}\n` +
+                        `Email: ${email}\n` +
+                        `Target Sector: ${sector}\n\n` +
+                        `Message/Scope:\n${message}`
+                    );
+
+                    // Trigger the mailto link action
+                    window.location.href = `mailto:${recipientEmail}?subject=${subject}&body=${body}`;
+                });
+            }
+
+            console.log("ICEA Unified Centralized Portal initialized successfully.");
         });
     </script>
 </body>
